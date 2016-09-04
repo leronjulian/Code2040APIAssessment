@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="../favicon.ico">
+
+	<title>Leron Julian</title>
+
+	<link href="../boot/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+		body {
+			padding-top: 50px;
+			padding-bottom: 20px;
+		}
+	</style>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="container">
+	</div>
+	<script>
+		var send = {
+			"token" : "ed469c3c9f95a14f27a5d1f6d6363358",
+			"github" : "https://github.com/leronjulian/Code2040APIAssessment"
+		}
+		$(document).ready(function(){
+			$(".container").text("ready!");
+			$(".container").text(send);
+			console.log(send);
+			
+			$.ajax({
+                url: "http://challenge.code2040.org/api/register",
+                type: 'POST',
+                crossDomain: true,
+                dataType: 'text',
+                data: JSON.stringify(send)
+            }).done(function (data) {
+                $(".container").text(data);
+                console.log(data);
+            }); 
+		});
+	</script>
+</body>
+</html>
