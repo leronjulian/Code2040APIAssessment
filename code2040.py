@@ -17,7 +17,7 @@ token = "http://challenge.code2040.org/api/reverse"
 url = "http://challenge.code2040.org/api/reverse"
 payload = json.dumps({'token': token})
 
-r = requests.post(url, payload)
+r = requests.post(token, payload)
 stringToReverse = json.loads(r.text)["result"]
 
 def reverse(string):
@@ -28,6 +28,6 @@ string2 = reverse(stringToReverse)
 url = "http://challenge.code2040.org/api/reverse/validate"
 payload = json.dumps({'token' : token, 'string': string2})
 
-r = requests.post(url, payload)
+r = requests.post(token, payload)
 result = json.loads(r.text)["result"]
 print result
