@@ -23,10 +23,10 @@ stringToReverse = json.loads(r.text)["result"]
 def reverse(string):
     return string[::-1]
 
-reversed_string = reverse(stringToReverse)
+string2 = reverse(stringToReverse)
 
 url = "http://challenge.code2040.org/api/reverse/validate"
-payload = json.dumps({'token' : token, 'string': reversed_string})
+payload = json.dumps({'token' : token, 'string': string2})
 
 r = requests.post(url, payload)
 result = json.loads(r.text)["result"]
