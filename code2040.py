@@ -1,6 +1,4 @@
-import requests
-import json
-
+import requests, iso8601, json
 def complete_challenge(token):
 	github = "https://github.com/leronjulian/Code2040APIAssessment"
 	url = "http://challenge.code2040.org/api/register"
