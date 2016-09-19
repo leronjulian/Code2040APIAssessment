@@ -13,6 +13,7 @@ token = json.loads(r.text)["result"]
 # Stage I: Reverse a string
 # =============================================================================
 
+token = "http://challenge.code2040.org/api/reverse"
 url = "http://challenge.code2040.org/api/reverse"
 payload = json.dumps({'token': token})
 
