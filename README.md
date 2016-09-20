@@ -1,6 +1,8 @@
 # Code2040APIAssessment - Leron Julian
 Introduction
 
+Written in Python
+
 The next step in the application process is the Technical Assessment.
 
 After you pass this API Challenge, you'll answer some Short Answer Questions and upload a resume. The final step is a quick phone interview, and then we match you with our amazing company partners! Remember that being selected as a finalist doesn't guarantee you an internship--you still must interview with company partners--so we recommend you continue pursuing other options until you get an official offer.
